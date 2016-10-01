@@ -1,0 +1,36 @@
+{
+  "name": "niut",
+  "version": "0.1.0",
+  "description": "Minimalist testing framework",
+  "main": "niut.js",
+  "scripts": {
+    "test": "node tests/runner.js",
+    "coverage": "istanbul cover tests/runner.js",
+    "coveralls": "istanbul cover tests/runner.js && (cat ./coverage/lcov.info | coveralls)",
+    "minify": "uglifyjs -o niut.min.js niut.js",
+    "integrity": "cat niut.min.js | openssl dgst -sha384 -binary | openssl enc -base64 -A"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxFab/niut.git"
+  },
+  "keywords": [
+    "unit-tests",
+    "testing"
+  ],
+  "devDependencies": {
+    "istanbul": "0.4.*",
+    "coveralls": "2.11.*",
+    "uglify-js": "2.7.*"
+  },
+  "author": {
+    "name": "Fabien Bavent",
+    "email": "fabien.bavent@gmail.com"
+  },
+  "license": "ZLIB",
+  "bugs": {
+    "url": "https://github.com/AxFab/niut/issues"
+  },
+  "homepage": "https://github.com/AxFab/niut#readme",
+  "readmeFilename": "README.md"
+}

@@ -1,0 +1,25 @@
+# =======================================================
+# NpmIgnore '.npmignore' for JS code
+#     Fabien B. <fabien.bavent@gmail.com>
+#
+# This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# =======================================================
+
+# Use file white-list and folder black-list
+*
+!*/
+
+# Remove building folders
+[Bb]in/
+[Cc]overage/
+[Nn]ode_modules/
+
+# Add source file
+!*.js
+!*.json
+
+# Add repository files
+!*.md
+!.git*
